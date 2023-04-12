@@ -7,3 +7,16 @@
 **Главная страница**
 
 ![alt text](Mockup/first.png)
+
+**Окно регистрации и авторизации**
+
+![alt text](Mockup/login.png)
+
+**Страница продуктов**
+
+![alt text](Mockup/main.png)
+
+**Корзина**
+
+![alt text](Mockup/cart.png)
+
