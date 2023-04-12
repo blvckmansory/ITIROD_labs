@@ -6,4 +6,4 @@
 
 **Главная страница**
 
-![alt text](Z&R Mockup/главная.png)
+![alt text](Mockup/first.png)
