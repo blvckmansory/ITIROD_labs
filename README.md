@@ -16,6 +16,10 @@
 
 ![alt text](Mockup/main.png)
 
+**Страница "Про нас"**
+
+![alt text](Mockup/about.png)
+
 **Корзина**
 
 ![alt text](Mockup/cart.png)
