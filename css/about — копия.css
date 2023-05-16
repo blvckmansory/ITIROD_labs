@@ -1,0 +1,211 @@
+:root {
+  --color-light: #fefaf2;
+  --color-white: #fefaf2;
+  --color-unaccent: #808080;
+  --color-medium: #e8e8e8;
+  --color-dark: #a1a1a1;
+  --color-green: #2a4c39;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  line-height: 1.7;
+  background-color: var(--color-light);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav{
+  background: var(--color-light);
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+}
+label.logo{
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 00; 
+  color: #2a4c39;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 0 50px;
+}
+nav ul{
+  float: right;
+  margin-right: 650px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 30px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #2a4c39;
+  font-size: 16px;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+a.active,a:hover{
+  background: var(--color-green);
+  transition: .5s;
+  color: var(--color-light);
+}
+.checkbtn{
+  font-size: 30px;
+  color: #2a4c39;
+  float: right;
+  line-height: 30px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  label.logo{
+    font-size: 23px;
+    padding-left: 20px;
+  }
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-light);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+
+
+.zrp-header {
+  width: 100%;
+  height: 50px;
+  background-color: var(--color-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  line-height: 160%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-medium);
+  text-align: center;
+  font-size: 13px;
+}
+
+.main-information {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 100px 20px;
+}
+
+.erez {
+  flex-shrink: 0;
+  width: 40%;
+  height: auto;
+}
+
+.text-block {
+  width: 700px;
+  height: 400px;
+}
+
+.text-box-ot {
+  padding: 50px 0;
+}
+
+.text-box, .text-box-ot {
+  font-size: 17px;
+}
+
+
+@media screen and (max-width: 1250px) {
+  label.logo {
+    font-size: 25px;
+    padding: 0px 50px;
+  }
+  .nav ul li a {
+    font-size: 20px;
+  }
+  .main-information {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 25px;
+  }
+  .erez {
+    width: 90%;
+  }
+  .text-block {
+    margin-top: 50px;
+    width: 90%;
+  }
+  nav ul {
+    margin-right: 100px;
+  }
+}
+
+.line {
+  border-bottom: 1px solid lightgray;
+ }
+
+@media screen and (max-width: 420px) {
+  label.logo {
+    font-size: 20px;
+    padding: 0px 50px;
+  }
+  .checkbtn {
+    font-size: 25px;
+  }
+  a {
+    font-size: 10px;
+    width: 90%;
+  }
+}
